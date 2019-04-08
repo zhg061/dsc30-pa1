@@ -97,7 +97,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void secondMax() {
+    public void testsecondMax() {
         int result1 = Startup.secondMax(a1) ;
         assertEquals(2, result1);
         int result2 = Startup.secondMax(a2) ;
@@ -117,7 +117,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void mostFreqInt() {
+    public void testmostFreqInt() {
         int result1 = Startup.mostFreqInt(b1) ;
         assertEquals(1, result1);
         int result2 = Startup.mostFreqInt(b2) ;
@@ -133,7 +133,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void rearrange() {
+    public void testrearrange() {
         int[] result1 = Startup.rearrange(c1) ;
         assertArrayEquals(new int[]{1, 1, 1, 1}, result1);
         int[] result2 = Startup.rearrange(c2) ;
@@ -147,7 +147,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void removeDuplicates() {
+    public void testremoveDuplicates() {
         int result1 = Startup.removeDuplicates(d1) ;
         assertEquals(1, result1);
         assertArrayEquals(new int[]{1, 1, 1, 1}, d1);
@@ -185,7 +185,7 @@ public class StartupTest {
 
 
     @org.junit.Test
-    public void maxProfitOne() {
+    public void testmaxProfitOne() {
         int result1 = Startup.maxProfitOne(e1) ;
         assertEquals(1, result1);
         int result2 = Startup.maxProfitOne(e2) ;
@@ -201,7 +201,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void maxProfitMany() {
+    public void testmaxProfitMany() {
         int result1 = Startup.maxProfitMany(f1) ;
         assertEquals(1, result1);
         int result2 = Startup.maxProfitMany(f2) ;
@@ -217,7 +217,7 @@ public class StartupTest {
     }
 
     @org.junit.Test
-    public void jumpGame() {
+    public void testjumpGame() {
         assertEquals(false, Startup.jumpGame(g1));
         assertEquals(true, Startup.jumpGame(g2));
         assertEquals(true, Startup.jumpGame(g3));
@@ -227,35 +227,4 @@ public class StartupTest {
         assertEquals(true, Startup.jumpGame(g7));
     }
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @Test
-    public void secondMax1() {
-    }
-
-    @Test
-    public void mostFreqInt1() {
-    }
-
-    @Test
-    public void rearrange1() {
-    }
-
-    @Test
-    public void removeDuplicates1() {
-    }
-
-    @Test
-    public void maxProfitOne1() {
-    }
-
-    @Test
-    public void maxProfitMany1() {
-    }
-
-    @Test
-    public void jumpGame1() {
-    }
 }
