@@ -1,6 +1,22 @@
+/*
+ * NAME: Zhaoyi Guo
+ * PID: A15180402
+ */
+
+/**
+ * this class creates a function to create an array of new words based on the input array of words
+ * then, the second function print out the actual output of newWords.
+ */
 public class EnglishDictionary {
+    /**
+     * creates a new word by concatenating elements from array letters,
+     * starting from letters[i] through letters[i+n],
+     * but only if letters[i] does not start with either “x” or “z”.
+     * @param letters
+     * @param n
+     * @return result, which is a new array consisting of new words.
+     */
     public static String [] newWords(String[] letters, int n) {
-        /** Your code is here */
         String[] result= new String[letters.length];
         for (int i = 0; i < letters.length; i++) {
             if (letters[i].charAt(0) == 'z' || letters[i].charAt(0) == 'x') {
@@ -18,6 +34,11 @@ public class EnglishDictionary {
         return result;
     }
 
+    /**
+     * a test for function newWords,
+     * it calss newWords, and it prints out the actual output of the function.
+     * @param args
+     */
     public static void main(String[] args) {
         String[] test = {"xoxo", "yum" ,"lol", "ypop"};
         int n = 2;

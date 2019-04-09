@@ -3,7 +3,7 @@
  * PID: A15180402
  */
 /**
- * class Startup consists of 7 methods
+ * class Startup consists of 7 functions
  */
 public class Startup {
     /**
@@ -39,7 +39,7 @@ public class Startup {
         int[] neg_a;
         int result_count = 0;
         int result_index = 0;
-        for (int z = 0; z < a.length; z++){
+        for (int z = 0; z < a.length; z++) {
             if (a[z] < min_elem) {
                 min_elem = a[z];
             }
@@ -69,13 +69,13 @@ public class Startup {
         }
         return result_index;
     }
-//    /**
-//     * This method takes in an array of integers
-//     * and returns a new array that contains
-//     * the elements of the input array
-//     * where: all the even numbers come before
-//     * all the odd numbers.
-//     */
+    /**
+     * This method takes in an array of integers
+     * and returns a new array that contains
+     * the elements of the input array
+     * where: all the even numbers come before
+     * all the odd numbers.
+     */
     public static int[] rearrange(int[] a) {
         int two = 2;
         int front = 0;
@@ -93,13 +93,13 @@ public class Startup {
         return result;
     }
 
-    //    /**
-//     * This method takes in a sorted array
-//     * (You can assume the given array is always sorted).
-//     * It should modify the given array and remove the duplicates
-//     * such that each element only appears once at the beginning
-//     * and return the number of unique elements in the new array.
-//     */
+    /**
+     * This method takes in a sorted array
+     * (You can assume the given array is always sorted).
+     * It should modify the given array and remove the duplicates
+     * such that each element only appears once at the beginning
+     * and return the number of unique elements in the new array.
+     */
     public static int removeDuplicates(int[] a) {
         if (a.length == 0) {
             return 0;
@@ -115,18 +115,18 @@ public class Startup {
         return j;
     }
 
-    //    /**
-//     * This method takes in an array of non-negative integers,
-//     * where the element at index i is the price of a stock on day i.
-//     * If you were only allowed to complete at most one transaction,
-//     * which means you can only buy a stock once and then sell it once,
-//     * design a method to return the maximum profit.
-//     */
+    /**
+     * This method takes in an array of non-negative integers,
+     * where the element at index i is the price of a stock on day i.
+     * If you were only allowed to complete at most one transaction,
+     * which means you can only buy a stock once and then sell it once,
+     * design a method to return the maximum profit.
+     */
     public static int maxProfitOne(int[] a) {
         int max = 0;
         int min = a[0];
         int profit = 0;
-        for (int i = 1; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             if (a[i] < min) {
                 min = a[i];
             }
@@ -142,12 +142,12 @@ public class Startup {
         return profit;
     }
 
-    //    /**
-//     * This method takes in an array of non-negative integers,
-//     * where the element at index i is the price of a stock on day i.
-//     * If you were now allowed to complete as many transactions as you want,
-//     * design a method to return the maximum profit.
-//     */
+    /**
+     * This method takes in an array of non-negative integers,
+     * where the element at index i is the price of a stock on day i.
+     * If you were now allowed to complete as many transactions as you want,
+     * design a method to return the maximum profit.
+     */
     public static int maxProfitMany(int[] a) {
         int profit = 0;
         for (int i = 0; i < a.length - 1; i++) {
@@ -158,7 +158,7 @@ public class Startup {
         return profit;
     }
 
-        /**
+    /**
      * This method takes in an array of non-negative integers.
      * You are initially positioned at the first index of the array.
      * Each element in the array is the maximum jump length at that index.

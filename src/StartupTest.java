@@ -1,8 +1,12 @@
-
-
+/*
+ * NAME: Zhaoyi Guo
+ * PID: A15180402
+ */
 import org.junit.Before;
 import org.junit.Test;
-
+/**
+ * the StartupTest class tests the functions in the class Startup.
+ */
 import static org.junit.Assert.*;
 
 public class StartupTest {
@@ -36,12 +40,15 @@ public class StartupTest {
     int[] e4;
     int[] e5;
     int[] e6;
+    int[] e7;
+    int[] e8;
     int[] f1;
     int[] f2;
     int[] f3;
     int[] f4;
     int[] f5;
     int[] f6;
+    int[] f7;
     int[] g1;
     int[] g2;
     int[] g3;
@@ -81,12 +88,15 @@ public class StartupTest {
         e4 = new int[]{4, 4, 4, 3};
         e5 = new int[]{6, 4, 7, 5, 8 ,6};
         e6 = new int[]{6, 6, 6, 6};
+        e7 = new int[]{1};
+        e8 = new int[]{1, 2};
         f1 = new int[]{3, 2, 1, 2};
         f2 = new int[]{3, 4, 5, 6, 7, 8, 9};
         f3 = new int[]{6, 4, 2, 0};
         f4 = new int[]{4, 4, 4, 3};
         f5 = new int[]{6, 4, 7, 5, 8 ,6};
         f6 = new int[]{6, 6, 6, 6};
+        f7 = new int[]{2, 8, 7, 5, 9, 3};
         g1 = new int[]{0, 1, 2};
         g2 = new int[]{1, 0};
         g3 = new int[]{1, 2, 2, 0, 0};
@@ -198,6 +208,10 @@ public class StartupTest {
         assertEquals(4, result5);
         int result6 = Startup.maxProfitOne(e6) ;
         assertEquals(0, result6);
+        int result7 = Startup.maxProfitOne(e7) ;
+        assertEquals(0, result7);
+        int result8 = Startup.maxProfitOne(e8) ;
+        assertEquals(1, result8);
     }
 
     @org.junit.Test
@@ -214,6 +228,8 @@ public class StartupTest {
         assertEquals(6, result5);
         int result6 = Startup.maxProfitMany(f6) ;
         assertEquals(0, result6);
+        int result7 = Startup.maxProfitMany(f7) ;
+        assertEquals(10, result7);
     }
 
     @org.junit.Test
